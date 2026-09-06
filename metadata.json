@@ -1,0 +1,6 @@
+{
+  "name": "DevLens AI",
+  "description": "AI-powered Codebase Intelligence and Developer Mentor platform. Architectural X-Ray, AST static analysis, security fortress, code explorer, RAG codebase chat, and personalized developer mentor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,10 @@
+{
+  "usr-10cfa2560371": {
+    "id": "usr-10cfa2560371",
+    "email": "engineer@devlens.internal",
+    "name": "Staff Engineer",
+    "passwordHash": "f83260ff29c3235c970bdbcbcb97119c0903265c5438f80cc7992f2fd6bdb9a442028d0e9ae41f71b5e3a4f35a45e8beb7647e25b56b1b889ecd2dc351741dcd",
+    "salt": "f2c161c284480262597fc0c91992c6d6",
+    "createdAt": "2026-09-06T14:20:08.835Z"
+  }
+}

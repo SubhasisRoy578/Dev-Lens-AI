@@ -1,0 +1,16 @@
+{
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
+  "outputDirectory": "dist",
+  "framework": null,
+  "cleanUrls": true,
+  "functions": {
+    "api/index.ts": {
+      "runtime": "@vercel/node@5.0.0"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

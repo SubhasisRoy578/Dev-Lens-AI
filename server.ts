@@ -132,20 +132,20 @@ async function startServer() {
   app.use(authMiddleware as express.RequestHandler);
 
   // AUTHENTICATION API ROUTES
-  app.post('/api/auth/register', (req, res) => {
+  app.post('/api/auth/register', async (req, res) => {
     try {
       const { email, password, name } = req.body;
-      const result = registerUser(email, password, name);
+      const result = await registerUser(email, password, name);
       res.json(result);
     } catch (err: unknown) {
       res.status(400).json({ error: err instanceof Error ? err.message : 'Registration failed.' });
     }
   });
 
-  app.post('/api/auth/login', (req, res) => {
+  app.post('/api/auth/login', async (req, res) => {
     try {
       const { email, password } = req.body;
-      const result = loginUser(email, password);
+      const result = await loginUser(email, password);
       res.json(result);
     } catch (err: unknown) {
       res.status(401).json({ error: err instanceof Error ? err.message : 'Invalid credentials.' });
@@ -159,7 +159,7 @@ async function startServer() {
     res.json({ user: req.user });
   });
 
-  app.post('/api/auth/logout', (req: AuthenticatedRequest, res) => {
+  app.post('/api/auth/logout', async (req: AuthenticatedRequest, res) => {
     const authHeader = req.headers.authorization;
     let token = '';
     if (authHeader && authHeader.startsWith('Bearer ')) {
@@ -168,7 +168,7 @@ async function startServer() {
       token = String(req.headers['x-auth-token']).trim();
     }
     if (token) {
-      logoutUser(token);
+      await logoutUser(token);
     }
     res.json({ success: true });
   });

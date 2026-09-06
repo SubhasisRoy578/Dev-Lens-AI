@@ -6,5 +6,13 @@
     "passwordHash": "f83260ff29c3235c970bdbcbcb97119c0903265c5438f80cc7992f2fd6bdb9a442028d0e9ae41f71b5e3a4f35a45e8beb7647e25b56b1b889ecd2dc351741dcd",
     "salt": "f2c161c284480262597fc0c91992c6d6",
     "createdAt": "2026-09-06T14:20:08.835Z"
+  },
+  "usr-mtpwzuvx-543763ba": {
+    "id": "usr-mtpwzuvx-543763ba",
+    "email": "roysubhasis32@gmail.com",
+    "name": "Subhasis Roy",
+    "passwordHash": "56ffafc0263dccde1778fa3fb37247bac1df1dd73217f6af54e361351619d62cc14854123db8dc4b6037e22b9916365f1bc32629e4a1264677765bb1a7e4919e",
+    "salt": "f0d1222b274c757bc18508bb19d500d6",
+    "createdAt": "2026-09-06T14:36:12.957Z"
   }
 }
